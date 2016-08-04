@@ -244,7 +244,7 @@ AnalyserView.prototype.initGL = function() {
 
 
   if (this.has3DVisualizer)
-      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "http://bfplima.github.io/PCW/shaders/sonogram-vertex.txt", "https://bfplima.github.io/PCW/shaders/sonogram-fragment.txt");
+      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "https://bfplima.github.io/PCW/shaders/sonogram-vertex.txt", "https://bfplima.github.io/PCW/shaders/sonogram-fragment.txt");
 
 
 }
