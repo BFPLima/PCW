@@ -226,25 +226,25 @@ AnalyserView.prototype.initGL = function() {
   gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
   // Note we do not unbind this buffer -- not necessary
 
-  // Load the shaders
-  //this.frequencyShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/frequency-fragment.txt");
-  //this.waveformShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/waveform-fragment.txt");
-  //this.sonogramShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/sonogram-fragment.txt");
-
-
-
-  //if (this.has3DVisualizer)
-  //    this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "../../../shaders/sonogram-vertex.txt", "../../../shaders/sonogram-fragment.txt");
-
-
-  this.frequencyShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/frequency-fragment.txt");
-  this.waveformShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/waveform-fragment.txt");
-  this.sonogramShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
+   Load the shaders
+  this.frequencyShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/frequency-fragment.txt");
+  this.waveformShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/waveform-fragment.txt");
+  this.sonogramShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/sonogram-fragment.txt");
 
 
 
   if (this.has3DVisualizer)
-      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
+      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "../../../shaders/sonogram-vertex.txt", "../../../shaders/sonogram-fragment.txt");
+
+
+  //this.frequencyShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/frequency-fragment.txt");
+  //this.waveformShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/waveform-fragment.txt");
+  //this.sonogramShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
+
+
+
+  //if (this.has3DVisualizer)
+  //    this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
 
 
 }
