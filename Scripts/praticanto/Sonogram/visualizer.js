@@ -227,24 +227,24 @@ AnalyserView.prototype.initGL = function() {
   // Note we do not unbind this buffer -- not necessary
 
   // Load the shaders
-  this.frequencyShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/frequency-fragment.txt");
-  this.waveformShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/waveform-fragment.txt");
-  this.sonogramShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/sonogram-fragment.txt");
+ // this.frequencyShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/frequency-fragment.txt");
+ // this.waveformShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/waveform-fragment.txt");
+  //this.sonogramShader = o3djs.shader.loadFromURL(gl, "../../shaders/common-vertex.txt", "../../shaders/sonogram-fragment.txt");
+
+
+
+ // if (this.has3DVisualizer)
+  //    this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "../../shaders/sonogram-vertex.txt", "../../shaders/sonogram-fragment.txt");
+
+
+  this.frequencyShader = o3djs.shader.loadFromURL(gl, "hhttps://bfplima.github.io/PCW/shaders/common-vertex.txt", "hhttps://bfplima.github.io/PCW/shaders/frequency-fragment.txt");
+  this.waveformShader = o3djs.shader.loadFromURL(gl, "https://bfplima.github.io/PCW/shaders/common-vertex.txt", "https://bfplima.github.io/PCW/shaders/waveform-fragment.txt");
+  this.sonogramShader = o3djs.shader.loadFromURL(gl, "https://bfplima.github.io/PCW/shaders/common-vertex.txt", "https://bfplima.github.io/PCW/shaders/sonogram-fragment.txt");
 
 
 
   if (this.has3DVisualizer)
-      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "../../shaders/sonogram-vertex.txt", "../../shaders/sonogram-fragment.txt");
-
-
-  //this.frequencyShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/frequency-fragment.txt");
-  //this.waveformShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/waveform-fragment.txt");
-  //this.sonogramShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/common-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
-
-
-
-  //if (this.has3DVisualizer)
-  //    this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-vertex.txt", "http://www.cmsoft.com.br/PratiCantoWeb/shaders/sonogram-fragment.txt");
+      this.sonogram3DShader = o3djs.shader.loadFromURL(gl, "https://bfplima.github.io/PCW/shaders/sonogram-vertex.txt", "https://bfplima.github.io/PCW/shaders/sonogram-fragment.txt");
 
 
 }
