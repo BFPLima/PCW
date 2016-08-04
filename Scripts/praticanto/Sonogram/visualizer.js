@@ -226,7 +226,7 @@ AnalyserView.prototype.initGL = function() {
   gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
   // Note we do not unbind this buffer -- not necessary
 
-   Load the shaders
+  // Load the shaders
   this.frequencyShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/frequency-fragment.txt");
   this.waveformShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/waveform-fragment.txt");
   this.sonogramShader = o3djs.shader.loadFromURL(gl, "../../../shaders/common-vertex.txt", "../../../shaders/sonogram-fragment.txt");
